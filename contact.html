@@ -58,9 +58,25 @@
       border: none;
       border-radius: 4px;
       cursor: pointer;
+      margin-bottom: 10px; /* Added margin for spacing */
     }
 
     .contact-container button:hover {
+      background-color: #0056b3;
+    }
+
+    /* Style for home button */
+    .home-button {
+      width: 100%;
+      padding: 10px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .home-button:hover {
       background-color: #0056b3;
     }
   </style>
@@ -75,6 +91,7 @@
       <textarea id="message" name="message" placeholder="Your Message" required></textarea>
       <button type="submit">Submit</button>
     </form>
+    <button class="home-button" onclick="window.location.href='index.html'">Back-Home</button>
   </div>
 
   <script>
